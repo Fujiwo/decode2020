@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "mnist.python", "mnist.python\mnist.python.pyproj", "{E1D48DE9-6450-4853-B79C-8E5065A8C975}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mnist.CSharp", "Mnist.CSharp\Mnist.CSharp.csproj", "{AEA0F8C7-D14A-40EC-ABF1-D54D63208A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1D48DE9-6450-4853-B79C-8E5065A8C975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D48DE9-6450-4853-B79C-8E5065A8C975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA0F8C7-D14A-40EC-ABF1-D54D63208A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA0F8C7-D14A-40EC-ABF1-D54D63208A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA0F8C7-D14A-40EC-ABF1-D54D63208A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA0F8C7-D14A-40EC-ABF1-D54D63208A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6114F11E-C6CA-44EE-977A-6A7A9E93BD52}
+	EndGlobalSection
+EndGlobal
