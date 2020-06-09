@@ -42,6 +42,8 @@ Python による手書き文字のディープラーニングのサンプル プ
 
 上記 mnist.python　で作成した ONNX のファイルを C#/.NET で読み込んで、手書き文字データを認識してみるサンプルです。
 
+ライブラリとして、[Microsoft.ML.OnnxRuntime](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime/) を利用しています。
+
 | ソース コード/ファイル | クラス | 説明 |
 | --- | --- | --- |
 | [Program.cs](/Mnist.CSharp/Program.cs) | Program | Main ルーチン |
