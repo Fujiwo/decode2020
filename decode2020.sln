@@ -14,6 +14,51 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{8BA1EBF1-ABDC-4F5C-996F-D37A4BEFAB18}"
+	ProjectSection(SolutionItems) = preProject
+		images\azure0000.png = images\azure0000.png
+		images\azure0001.png = images\azure0001.png
+		images\azure0002.png = images\azure0002.png
+		images\azure0003.png = images\azure0003.png
+		images\azure0004.png = images\azure0004.png
+		images\azure0005.png = images\azure0005.png
+		images\azure0006.png = images\azure0006.png
+		images\azure0007.png = images\azure0007.png
+		images\azure0008.png = images\azure0008.png
+		images\azure0009.png = images\azure0009.png
+		images\azure0010.png = images\azure0010.png
+		images\azure0011.png = images\azure0011.png
+		images\azure0012.png = images\azure0012.png
+		images\azure0013.png = images\azure0013.png
+		images\azure0014.png = images\azure0014.png
+		images\azure0015.png = images\azure0015.png
+		images\azure0016.png = images\azure0016.png
+		images\azure0017.png = images\azure0017.png
+		images\azure0018.png = images\azure0018.png
+		images\azure0019.png = images\azure0019.png
+		images\azure0020.png = images\azure0020.png
+		images\azure0021.png = images\azure0021.png
+		images\azure0022.png = images\azure0022.png
+		images\azure0023.png = images\azure0023.png
+		images\azure0024.png = images\azure0024.png
+		images\azure0025.png = images\azure0025.png
+		images\azure0026.png = images\azure0026.png
+		images\console0001.png = images\console0001.png
+		images\console0002.png = images\console0002.png
+		images\console0003.png = images\console0003.png
+		images\console0004.png = images\console0004.png
+		images\console0005.png = images\console0005.png
+		images\kojimafujio201512mup400400.jpg = images\kojimafujio201512mup400400.jpg
+		images\vs0001.png = images\vs0001.png
+		images\vs0002.png = images\vs0002.png
+		images\vs0003.png = images\vs0003.png
+		images\vs0004.png = images\vs0004.png
+		images\vs0005.png = images\vs0005.png
+		images\vs0006.png = images\vs0006.png
+		images\vs0007.png = images\vs0007.png
+		images\vs0008.png = images\vs0008.png
+		images\vs0009.png = images\vs0009.png
+		images\vs0010.png = images\vs0010.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
