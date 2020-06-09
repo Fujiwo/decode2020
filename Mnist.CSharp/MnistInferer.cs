@@ -1,5 +1,4 @@
-﻿// MnistInferer.cs
-// 機械学習で作成した ONNX モデル ファイルを利用して、手書き文字の認識を行う
+﻿// 機械学習で作成した ONNX モデル ファイルを利用して、手書き文字の認識を行う
 using Microsoft.ML.OnnxRuntime;
 using Microsoft.ML.OnnxRuntime.Tensors;
 using System;

@@ -82,7 +82,7 @@ Visual Studio を起動し、新しいプロジェクトとして「Python ア�
 プロジェクトの中にある Python のソース コード ファイル (拡張子が .py のファイル) を開け、 [mnist.py](/mnist.python/mnist.py) の中のコードに置き換えます。
 処理の内容については、ソース コードをご参照ください。
 
-```python
+```python:mnist.py
 #mnist.py
 #MNIST ディープ ラーニング プログラム
 
