@@ -38,7 +38,7 @@ Python による手書き文字のディープラーニングのサンプル プ
 | --- | --- |
 | [mnist.py](/mnist.python/mnist.py) | Python によるディープ ラーニング プログラム |
 
-#### 2. [Mnist.CShart](/Mnist.CSharp)
+#### 2. [Mnist.CSharp](/Mnist.CSharp)
 
 上記 mnist.python　で作成した ONNX のファイルを C#/.NET で読み込んで、手書き文字データを認識してみるサンプルです。
 
