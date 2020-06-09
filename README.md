@@ -1,7 +1,7 @@
 # decode2020
 Azure Machine Learning Studio (Preview) と Python と C#/.NET によるディープ ラーニングのサンプル/チュートリアル (de:code 2020 用)
 
-### 概要:
+### ■ 概要:
 
 Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) で提供されるサンプル コードです。
 
@@ -15,11 +15,11 @@ Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) �
 
 機械学習/ディープラーニングのモデルを作成するところから、.NET アプリケーションで使うまでの手順を、実際に手を動かしながら学ぶことができます。
 
-### プロジェクト:
+### ■ プロジェクト:
 
 本サンプルは、以下の2つのプロジェクトからなっています。
 
-#### [mnist.python](/mnist.python)
+#### 1. [mnist.python](/mnist.python)
 
 Python による手書き文字のディープラーニングのサンプル プログラムです。
 [Visual Studio](https://visualstudio.microsoft.com) からコンソールで実行できます。
@@ -37,7 +37,7 @@ Python による手書き文字のディープラーニングのサンプル プ
 | --- | --- |
 | [mnist.py](/mnist.python/mnist.py) | Python によるディープ ラーニング プログラム |
 
-#### [Mnist.CShart](/Mnist.CSharp)
+#### 2. [Mnist.CShart](/Mnist.CSharp)
 
 上記 mnist.python　で作成した ONNX のファイルを C#/.NET で読み込んで、手書き文字データを認識してみるサンプルです。
 
@@ -49,37 +49,41 @@ Python による手書き文字のディープラーニングのサンプル プ
 | [assets/mnist_model.onnx](/Mnist.CSharp/assets/mnist_model.onnx) | --- | 学習済みモデル (ONNX 形式ファイル) |
 
 
-### 開発環境:
+### ■ 開発:
 
 開発環境は、Visual Studio と Azure Machine Learning Studio です。
 
-### Visual Studio に Python の開発環境をインストールする
+### 1. Visual Studio での Python 開発
 
 まずは、Visual Studio で Python を使えるようにしましょう。
 スタート メニューなどから、Visual Studio Installer を起動します。
 
-「Python 開発」にチェックを入れて、「変更」します。
+1.1 「Python 開発」にチェックを入れて、「変更」します。
 ![Visual Studio Installer で Python 開発をインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0001.png)
 
-Visual Studio を起動し、新しいプロジェクトとして「Python アプリケーション」を作成します。
+1.2 Visual Studio を起動し、新しいプロジェクトとして「Python アプリケーション」を作成します。
 ![Visual Studio で Python アプリケーションを作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0002.png)
 
-プロジェクトが出来上がったら、Python のライブラリーを追加します。
+1.3 プロジェクトが出来上がったら、Python のライブラリーを追加します。
 「ソリューション エクスプローラー」でプロジェクトの「Python 環境」の中を右クリックし、「Python パッケージの管理」を選択します。
 ![Python パッケージの管理](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0003.png)
 
 先ほど右クリックした Python 環境に Python のライブラリーを3つ追加していきます。
 先ずは、TensorFlow です。
-検索窓に tensorflow と入力し、「次のコマンドを実行する: pip install tensorflow」をクリックします。
+
+1.4 検索窓に tensorflow と入力し、「次のコマンドを実行する: pip install tensorflow」をクリックします。
 ![TensorFlow のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0004.png)
 
-同様に、Keras をインストールします。
+1.5 同様に、Keras をインストールします。
 ![Keras のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0005.png)
 
-最後に、keras2onnx をインストールします。
+1.6 最後に、keras2onnx をインストールします。
 ![keras2onnx のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0006.png)
 
-プロジェクトの中にある Python のソース コード ファイル (拡張子が .py のファイル) を開け、 [mnist.py](/mnist.python/mnist.py) の中のコードに置き換えます。
+開発環境は以上で整いました。
+コードを書いていきましょう。
+
+1.7 プロジェクトの中にある Python のソース コード ファイル (拡張子が .py のファイル) を開け、 [mnist.py](/mnist.python/mnist.py) の中のコードに置き換えます。
 処理の内容については、ソース コードをご参照ください。
 
 ```python:mnist.py
@@ -204,28 +208,60 @@ onnx_model_file = saved_model_path + '/mnist_model.onnx'
 onnx.save_model(onnx_model, onnx_model_file)
 ```
 
-これを実行すると、Keras と TensorFlow によって、MNIST を学習し、学習済みのモデルを ONNX 形式でファイルに出力します。
+1.8 Visual Studio で実行してみましょう。
+
+コンソール画面が立ち上がります。
+![mnist.python の開始画面](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0001.png)
+
+Keras と TensorFlow によって、MNIST の学習を行います。これには、時間がかかります。
+![MNIST の学習中](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0002.png)
+
+最後に、学習済みのモデルを ONNX 形式でファイルに出力して、プログラムが終了します。
+![プログラムの終了](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0003.png)
+
+ファイル エクスプローラーで、プロジェクトのフォルダーを確認すると、学習済みモデルの ONNX 形式ファイルが出来ているのが分かります。 
+![学習済みモデルの ONNX 形式ファイルが出来ている](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0004.png)
 
 
-### Azure Machine Learning Studio を利用する
+### 2. Azure Machine Learning Studio を利用する
 
-### Visual Studio で ML.NET を利用する
+次は、このプログラムを Azure 上で実行してみましょう。
 
+Web ブラウザーで、[Azure Machine Learning Studio (Preview)](https://ml.azure.com) を開きましょう。
 
 ![Azure Portal](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0000.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0001.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0002.png)
-
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0003.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0004.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0005.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0006.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0007.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0008.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0009.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0010.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0011.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0012.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0013.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0014.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0015.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0016.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0017.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0018.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0019.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0020.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0021.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0022.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0023.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0024.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0025.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0026.png)
 
-![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0001.png)
-![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0002.png)
-![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0003.png)
-![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0004.png)
-![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0005.png)
+### 3. Visual Studio で ML.NET を利用する
 
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0007.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0008.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0009.png)
 ![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0010.png)
+
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0005.png)
