@@ -490,5 +490,5 @@ Fujio Kojima: a software developer in Japan
 
 ## License
 
-This sample is under the MIT License.
+This sample is under the [MIT License](/LICENSE).
 
