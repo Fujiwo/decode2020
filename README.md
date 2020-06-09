@@ -461,6 +461,7 @@ namespace Mnist.CSharp
 ## Author Info
 
 Fujio Kojima: a software developer in Japan
+![Fujio Kojima](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/kojimafujio201512mup400400.jpg)
 * Microsoft MVP for Development Tools - Visual C# (Jul. 2005 - Dec. 2014)
 * Microsoft MVP for .NET (Jan. 2015 - Oct. 2015)
 * Microsoft MVP for Visual Studio and Development Technologies (Nov. 2015 - Jun. 2018)
