@@ -1,13 +1,12 @@
-# decode2020
-Azure Machine Learning Studio (Preview) と Python と C#/.NET によるディープ ラーニングのサンプル/チュートリアル (de:code 2020 用)
+# de:code 2020 のための Azure Machine Learning Studio と Python と C#/.NET によるディープ ラーニングのサンプル/チュートリアル
 
 ## ■ 概要:
 
 Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) で提供されるサンプル コードです。
 
-ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による機械学習/ディープラーニングのモデルを作成し、それを [.NET](https://docs.microsoft.com/ja-jp/dotnet/) の中の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) を [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) から利用してみましょう。
+ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による機械学習/ディープラーニングのモデルを作成し、[.NET](https://docs.microsoft.com/ja-jp/dotnet/) の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) で [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) から利用してみましょう。
 
-チュートリアル形式で説明します。
+チュートリアル形式で、順に説明していきます。
 
 1. Visual Studio で話題の Keras と TensorFlow を使って Python で機械学習/ディープラーニングをやってみよう
 2. Azure Machine Learning を使ってクラウド上で機械学習してみよう
@@ -53,7 +52,7 @@ Python による手書き文字のディープラーニングのサンプル プ
 
 ## ■ 開発:
 
-それでは、開発してみましょう。
+それでは、プログラムを作っていきましょう。
 開発環境は、Visual Studio と Azure Machine Learning Studio です。
 
 ### 1. Visual Studio で話題の Keras と TensorFlow を使って Python で機械学習/ディープラーニングをやってみよう
@@ -61,7 +60,7 @@ Python による手書き文字のディープラーニングのサンプル プ
 まずは、Visual Studio で Python を使えるようにしましょう。
 スタート メニューなどから、Visual Studio Installer を起動します。
 
-1.1 「Python 開発」にチェックを入れて、「変更」します。
+#### 1.1 「Python 開発」にチェックを入れて、「変更」します。
 ![Visual Studio Installer で Python 開発をインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0001.png)
 
 1.2 Visual Studio を起動し、新しいプロジェクトとして「Python アプリケーション」を作成します。
