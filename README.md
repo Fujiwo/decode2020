@@ -16,6 +16,22 @@ Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) �
 
 ※ この内容は、2020年6月9日時点のものです。
 
+
+### 関連資料
+
+機械学習 (Machine Learning) について、まずざっくりと知りたい方向けに関連資料をご紹介します。
+より入門編となっています。
+
+* [CSharpNeuralNetworkSample-AI-decode](https://github.com/Fujiwo/CSharpNeuralNetworkSample-AI-decode): neural network sample in C# for Microsoft de:code 2018 AI sessions (C# で機械学習の原理であるニューラルネットワークをフルスクラッチで書いてみるサンプルコードと説明)
+* [PredictStockPrice-AI-decode](https://github.com/Fujiwo/PredictStockPrice-AI-decode):
+neural network sample in C# for Microsoft de:code 2018 AI sessions ([Microsoft Azure Machine Learning Studio](https://studio.azureml.net) による株価予想プログラム)
+* [『機械学習 (AI/ML) の基礎と Microsoft の AI | 2019/04/02 Global AI Nights Fukui | slideshare](https://www.slideshare.net/Fujiwo/aiml-microsoft-ai-20190402-global-ai-nights-fukui)
+* [機械学習 (AI/ML) 勉強会 #1 基本編 | slideshare](https://www.slideshare.net/Fujiwo/ai-ml-1)
+* [機械学習 (AI/ML) 勉強会 #2 IoT編 | slideshare](https://www.slideshare.net/Fujiwo/2-iot)
+* [機械学習入門 | slideshare](https://www.slideshare.net/Fujiwo/ss-102524909)
+* [C# でニューラルネットワークをスクラッチで書いて機械学習の原理を理解しよう | slideshare](https://www.slideshare.net/Fujiwo/c-98831016)
+
+
 ## ■ プロジェクト:
 
 本サンプルは、以下の2つのプロジェクトからなっています。
