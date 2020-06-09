@@ -63,23 +63,23 @@ Python による手書き文字のディープラーニングのサンプル プ
 #### 1.1 「Python 開発」にチェックを入れて、「変更」します。
 ![Visual Studio Installer で Python 開発をインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0001.png)
 
-1.2 Visual Studio を起動し、新しいプロジェクトとして「Python アプリケーション」を作成します。
+#### 1.2 Visual Studio を起動し、新しいプロジェクトとして「Python アプリケーション」を作成します。
 ![Visual Studio で Python アプリケーションを作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0002.png)
 
-1.3 プロジェクトが出来上がったら、Python のライブラリーを追加します。
+#### 1.3 プロジェクトが出来上がったら、Python のライブラリーを追加します。
 「ソリューション エクスプローラー」でプロジェクトの「Python 環境」の中を右クリックし、「Python パッケージの管理」を選択します。
 ![Python パッケージの管理](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0003.png)
 
 先ほど右クリックした Python 環境に Python のライブラリーを3つ追加していきます。
 先ずは、TensorFlow です。
 
-1.4 検索窓に tensorflow と入力し、「次のコマンドを実行する: pip install tensorflow」をクリックします。
+#### 1.4 検索窓に tensorflow と入力し、「次のコマンドを実行する: pip install tensorflow」をクリックします。
 ![TensorFlow のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0004.png)
 
-1.5 同様に、Keras をインストールします。
+#### 1.5 同様に、Keras をインストールします。
 ![Keras のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0005.png)
 
-1.6 最後に、keras2onnx をインストールします。
+#### 1.6 最後に、keras2onnx をインストールします。
 ![keras2onnx のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0006.png)
 
 開発環境は以上で整いました。
@@ -87,13 +87,13 @@ Python による手書き文字のディープラーニングのサンプル プ
 ※ 本サンプル コードでの、Python とライブラリーのバージョンは以下のようになっています:
 * Python のバージョン: 3.7
 * 各ライブラリのバージョン:
-** TensorFlow 2.1.0
-** Keras 2.2.4-tf
-** keras2onnx 1.6.1
+    * TensorFlow 2.1.0
+    * Keras 2.2.4-tf
+    * keras2onnx 1.6.1
 
 コードを書いていきましょう。
 
-1.7 プロジェクトの中にある Python のソース コード ファイル (拡張子が .py のファイル) を開け、 [mnist.py](/mnist.python/mnist.py) の中のコードに置き換えます。
+#### 1.7 プロジェクトの中にある Python のソース コード ファイル (拡張子が .py のファイル) を開け、 [mnist.py](/mnist.python/mnist.py) の中のコードに置き換えます。
 処理の内容については、ソース コードをご参照ください。
 
 ```python:mnist.py
@@ -218,7 +218,7 @@ onnx_model_file = saved_model_path + '/mnist_model.onnx'
 onnx.save_model(onnx_model, onnx_model_file)
 ```
 
-1.8 Visual Studio で実行してみましょう。
+#### 1.8 Visual Studio で実行してみましょう。
 
 コンソール画面が立ち上がります。
 ![mnist.python の開始画面](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0001.png)
@@ -229,7 +229,7 @@ Keras と TensorFlow によって、MNIST の学習を行います。これに�
 最後に、学習済みのモデルを ONNX 形式でファイルに出力して、プログラムが終了します。
 ![プログラムの終了](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0003.png)
 
-ファイル エクスプローラーで、プロジェクトのフォルダーを確認すると、学習済みモデルの ONNX 形式ファイルが出来ているのが分かります。 
+#### 1.9 ファイル エクスプローラーで、プロジェクトのフォルダーを確認すると、学習済みモデルの ONNX 形式ファイルが出来ているのが分かります。 
 ![学習済みモデルの ONNX 形式ファイルが出来ている](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0004.png)
 
 
@@ -237,52 +237,52 @@ Keras と TensorFlow によって、MNIST の学習を行います。これに�
 
 次は、このプログラムを Azure 上で実行してみましょう。
 
-2.1 Web ブラウザーで、[Microsoft Azure Portal](https://portal.azure.com) を開き、サインインします。
+#### 2.1 Web ブラウザーで、[Microsoft Azure Portal](https://portal.azure.com) を開き、サインインします。
 (Azure の使用には、費用が掛かる場合があります)
 
-2.2 「リソースの作成」を選択します。
+#### 2.2 「リソースの作成」を選択します。
 ![Azure Portal でリソースの作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0000.png)
 
-2.3 検索窓に「Machine Learning」と入力して検索し、「Machine Learning」を選びます。
+#### 2.3 検索窓に「Machine Learning」と入力して検索し、「Machine Learning」を選びます。
 ![Machine Learning の選択](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0001.png)
 
-2.4 「Machine Learning」を「作成」します。
+#### 2.4 「Machine Learning」を「作成」します。
 ![Machine Learning の作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0002.png)
 
-2.5 必要事項を入力します。「リソース グループ」は新規に作成しても良いでしょう。
+#### 2.5 必要事項を入力します。「リソース グループ」は新規に作成しても良いでしょう。
 ![Machine Learning の設定](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0003.png)
 
-2.6 Web ブラウザーで、[Azure Machine Learning Studio (Preview)](https://ml.azure.com) を開きましょう。
+#### 2.6 Web ブラウザーで、[Azure Machine Learning Studio (Preview)](https://ml.azure.com) を開きましょう。
 ![Azure Machine Learning Studio](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0004.png)
 
-2.7 「ノートブック」 を「今すぐ開始」します。
+#### 2.7 「ノートブック」 を「今すぐ開始」します。
 ![ノートブックの開始](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0005.png)
 
-2.8 ノートブックが開いたら、「新しいフォルダーの作成」を行います。
+#### 2.8 ノートブックが開いたら、「新しいフォルダーの作成」を行います。
 ![新しいフォルダーの作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0006.png)
 
-2.9 フォルダー名は好きなもので結構です。ここでは「decode2020」とします。
+#### 2.9 フォルダー名は好きなもので結構です。ここでは「decode2020」とします。
 ![フォルダー名の設定](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0007.png)
 
-2.10 「新しいフォルダーの作成」アイコンの隣の「新しいファイルの作成」アイコンをクリックして、「mnist.ipynb」という名前で新しい Python Notebook を作成します。
+#### 2.10 「新しいフォルダーの作成」アイコンの隣の「新しいファイルの作成」アイコンをクリックして、「mnist.ipynb」という名前で新しい Python Notebook を作成します。
 ![新しい Python Notebook の作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0008.png)
 
-2.11 ノートブックが開いたら、次に「新しいコンピューティングの作成」を行います。機械学習に使う CPU や GPU を持った仮想マシンの割り当てです。
+#### 2.11 ノートブックが開いたら、次に「新しいコンピューティングの作成」を行います。機械学習に使う CPU や GPU を持った仮想マシンの割り当てです。
 ![新しいコンピューティングの作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0009.png)
 
-2.12 新しいコンピューティングを設定して作成します。ここでは、1コアの CPU のみの小さな仮想マシンとしました。
+#### 2.12 新しいコンピューティングを設定して作成します。ここでは、1コアの CPU のみの小さな仮想マシンとしました。
 ![新しいコンピューティングの設定と作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0010.png)
 
-2.12 3 つの方法の中からノートブックを編集する方法が選べます。ここでは、「インラインで編集 (プレビュー)」を選択しました。
+#### 2.12 3 つの方法の中からノートブックを編集する方法が選べます。ここでは、「インラインで編集 (プレビュー)」を選択しました。
 ![ノートブックを編集する](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0011.png)
 
-2.13 ノートブックでは、セルと呼ばれる個々の編集領域に少しずつコードを入れていくことができます。
+#### 2.13 ノートブックでは、セルと呼ばれる個々の編集領域に少しずつコードを入れていくことができます。
 セルの左側にある三角のアイコンをクリックすると、セルの中のコードだけをすぐに実行してみることができます。
 先ずは、必要となる Python ライブラリーの「keras2onnx」をインストールしましょう。
 セルの中に、「pip install keras2onnx」と書いて実行することでインストールすることができます。
 ![keras2onnx のインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0012.png)
 
-2.14 ここからは、先ほど Visual Studio 上で使用した [mnist.py](/mnist.python/mnist.py) のコードを少しずつセルに入力していきます。
+#### 2.14 ここからは、先ほど Visual Studio 上で使用した [mnist.py](/mnist.python/mnist.py) のコードを少しずつセルに入力していきます。
 ![Python のコードの入力](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0013.png)
 
 次々と入力しては、実行していきます。
@@ -301,10 +301,10 @@ Keras と TensorFlow によって、MNIST の学習を行います。これに�
 ![Python のコードの入力](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0023.png)
 ![Python のコードの入力](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0024.png)
 
-全部のセルを一気に実行することもできます。
+#### 2.15 全部のセルを一気に実行することもできます。
 ![全部のセルを一気に実行](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0025.png)
 
-全ての実行が終わると、Visual Studio で実行したときと同様に、学習済みモデルの ONNX 形式ファイルができています。
+#### 2.16 全ての実行が終わると、Visual Studio で実行したときと同様に、学習済みモデルの ONNX 形式ファイルができています。
 選択してダウンロードすることも可能です。
 ![学習済みモデルの ONNX 形式ファイル](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0026.png)
 
@@ -312,21 +312,21 @@ Keras と TensorFlow によって、MNIST の学習を行います。これに�
 
 最後に、学習済みモデルの ONNX 形式ファイルを .NET から利用してみましょう。
 
-3.1 Visual Studio で「コンソール アプリ (.NET Core)」を作成します。
+#### 3.1 Visual Studio で「コンソール アプリ (.NET Core)」を作成します。
 ※ この時点での .NET Core のバージョンは 3.1 です。
 ![Visual Studio でコンソール アプリ (.NET Core) を作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0007.png)
 
-3.2 プロジェクトに NuGet で「Microsoft.ML.OnnxRuntime」という Onnx ファイルを扱うためのライブラリーをインストールします。
+#### 3.2 プロジェクトに NuGet で「Microsoft.ML.OnnxRuntime」という Onnx ファイルを扱うためのライブラリーをインストールします。
 ![NuGet で Microsoft.ML.OnnxRuntime をインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0008.png)
 
-3.2 ソリューション エクスプローラーで、プロジェクトに「assets」というフォルダーを作成し、その中に学習済みモデル (ONNX 形式ファイル) である [assets/mnist_model.onnx](/Mnist.CSharp/assets/mnist_model.onnx) をコピーしておきます。
+#### 3.2 ソリューション エクスプローラーで、プロジェクトに「assets」というフォルダーを作成し、その中に学習済みモデル (ONNX 形式ファイル) である [assets/mnist_model.onnx](/Mnist.CSharp/assets/mnist_model.onnx) をコピーしておきます。
 ![学習済みモデルをコピー](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0009.png)
 
-3.3 ソリューション エクスプローラーで ONNX ファイルを右クリックし、プロパティを設定します。
+#### 3.3 ソリューション エクスプローラーで ONNX ファイルを右クリックし、プロパティを設定します。
 「出力ディレクトリにコピー」を「新しい場合はコピーする」に設定しておきます。
 ![学習済みモデルをコピー](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0010.png)
 
-3.4 プロジェクトに C# のソース コードをコピーします。
+#### 3.4 プロジェクトに C# のソース コードをコピーします。
 
 プロジェクト内のファイル構成を再掲します:
 
@@ -454,7 +454,7 @@ namespace Mnist.CSharp
 }
 ```
 
-3.5 実行すると、次のように表示されます。手書き数字のデータを 2 と認識することができました。
+#### 3.5 実行すると、次のように表示されます。手書き数字のデータを 2 と認識することができました。
 ![実行結果](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0005.png)
 
 
@@ -472,7 +472,4 @@ Fujio Kojima: a software developer in Japan
 ## License
 
 This sample is under the MIT License.
-
-
-
 
