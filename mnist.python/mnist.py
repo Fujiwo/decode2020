@@ -1,3 +1,6 @@
+#mnist.py
+#MNIST ディープ ラーニング プログラム
+
 #以下のようにライブラリのインポートが必要
 #pip install tensorflow
 #pip install keras

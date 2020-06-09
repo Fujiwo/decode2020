@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿// EnumerableExtension.cs
+// 汎用拡張メソッド
+using System.Collections.Generic;
 
 namespace Mnist.CSharp
 {
