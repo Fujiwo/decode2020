@@ -3,6 +3,14 @@
 #pip install keras
 #pip install keras2onnx
 
+#Python のバージョン
+#3.7
+
+#各ライブラリのバージョン:
+#TensorFlow 2.1.0
+#Keras 2.2.4-tf
+#keras2onnx 1.6.1
+
 #ライブラリのインポート
 import tensorflow
 from tensorflow import keras
