@@ -1,16 +1,11 @@
 # decode2020
 Azure Machine Learning Studio (Preview) と Python と C#/.NET によるディープ ラーニングのサンプル/チュートリアル (de:code 2020 用)
 
-
-[mnist.py](/mnist.python/mnist.py)
-[mnist.py](https://github.com/Fujiwo/decode2020/blob/master/mnist.python/mnist.py)
-![Azure Portal](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0001.png)
-
 ### 概要:
 
 Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) で提供されるサンプル コードです。
 
-ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による機械学習/ディープラーニングのモデルを作成し、それを [.NET](https://docs.microsoft.com/ja-jp/dotnet/) の中の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) を [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) で利用して使ってみましょう。
+ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による機械学習/ディープラーニングのモデルを作成し、それを [.NET](https://docs.microsoft.com/ja-jp/dotnet/) の中の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) を [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) から利用してみましょう。
 
 チュートリアル形式で説明します。
 
@@ -22,7 +17,7 @@ Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) �
 
 ### プロジェクト:
 
-本
+本サンプルは、以下の2つのプロジェクトからなっています。
 
 #### [mnist.python](/mnist.python)
 
@@ -40,7 +35,7 @@ Python による手書き文字のディープラーニングのサンプル プ
 
 | ソース コード | 説明 |
 | --- | --- |
-| mnist.py | Python によるディープ ラーニング プログラム |
+| [mnist.py](/mnist.python/mnist.py) | Python によるディープ ラーニング プログラム |
 
 #### [Mnist.CShart](/Mnist.CSharp)
 
@@ -48,9 +43,28 @@ Python による手書き文字のディープラーニングのサンプル プ
 
 | ソース コード/ファイル | クラス | 説明 |
 | --- | --- | --- |
-| Program.cs | Program | Main ルーチン |
-| MnistInferer.cs | MnistInferer | 手書き数字推論器 |
-| EnumerableExtension.cs | EnumerableExtension | 汎用拡張メソッド |
-| assets/mnist_model.onnx | --- | 学習済みモデル (ONNX 形式ファイル) |
+| [Program.cs](/Mnist.CSharp/Program.cs) | Program | Main ルーチン |
+| [MnistInferer.cs](/Mnist.CSharp/MnistInferer.cs) | MnistInferer | 手書き数字推論器 |
+| [EnumerableExtension.cs](/Mnist.CSharp/EnumerableExtension.cs) | EnumerableExtension | 汎用拡張メソッド |
+| [assets/mnist_model.onnx](/Mnist.CSharp/assets/mnist_model.onnx) | --- | 学習済みモデル (ONNX 形式ファイル) |
 
 
+![Azure Portal](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0000.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0001.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0002.png)
+
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0025.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/azure0026.png)
+
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0001.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0002.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0003.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0004.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/console0005.png)
+
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0001.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0002.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0003.png)
+
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0008.png)
+![](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0009.png)
