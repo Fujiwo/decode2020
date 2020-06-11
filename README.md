@@ -9,7 +9,7 @@ Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) �
 チュートリアル形式で、順に説明していきます。
 
 1. [Visual Studio](https://visualstudio.microsoft.com) で話題の [Keras](https://keras.io) と [TensorFlow](https://www.tensorflow.org) を使って Python で機械学習/ディープラーニングをやってみよう
-2. Azure Machine Learning を使ってクラウド上で機械学習してみよう
+2. [Azure Machine Learning](https://azure.microsoft.com/ja-jp/services/machine-learning/) を使って[クラウド](https://ja.wikipedia.org/wiki/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0)上で機械学習してみよう
 3. ML.NET を使って学習済みのモデルを使ったアプリケーションを作ってみよう
 
 機械学習/ディープラーニングのモデルを作成するところから、.NET アプリケーションで使うまでの手順を、実際に手を動かしながら学ぶことができます。
@@ -330,11 +330,11 @@ Keras と TensorFlow によって、MNIST の学習を行います。これに�
 
 最後に、学習済みモデルの ONNX 形式ファイルを .NET から利用してみましょう。
 
-#### 3.1 Visual Studio で「コンソール アプリ (.NET Core)」を作成します。
+#### 3.1 Visual Studio で「コンソール アプリ ([.NET Core](https://docs.microsoft.com/ja-jp/dotnet/core/))」を作成します。
 ※ この時点での .NET Core のバージョンは 3.1 です。
 ![Visual Studio でコンソール アプリ (.NET Core) を作成](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0007.png)
 
-#### 3.2 プロジェクトに NuGet で「Microsoft.ML.OnnxRuntime」という Onnx ファイルを扱うためのライブラリーをインストールします。
+#### 3.2 プロジェクトに [NuGet](https://docs.microsoft.com/ja-jp/nuget/what-is-nuget) で「[Microsoft.ML.OnnxRuntime](https://www.nuget.org/packages/Microsoft.ML.OnnxRuntime/)」という Onnx ファイルを扱うためのライブラリーをインストールします。
 ![NuGet で Microsoft.ML.OnnxRuntime をインストール](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/vs0008.png)
 
 #### 3.2 ソリューション エクスプローラーで、プロジェクトに「assets」というフォルダーを作成し、その中に学習済みモデル (ONNX 形式ファイル) である [assets/mnist_model.onnx](/Mnist.CSharp/assets/mnist_model.onnx) をコピーしておきます。
