@@ -4,11 +4,11 @@
 
 Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) で提供されるサンプル コードです。
 
-ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による機械学習/ディープラーニングのモデルを作成し、[.NET](https://docs.microsoft.com/ja-jp/dotnet/) の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) で [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) から利用してみましょう。
+ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による[機械学習](https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92)/[ディープ ラーニング](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0)のモデルを作成し、[.NET](https://docs.microsoft.com/ja-jp/dotnet/) の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) で [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) から利用してみましょう。
 
 チュートリアル形式で、順に説明していきます。
 
-1. Visual Studio で話題の Keras と TensorFlow を使って Python で機械学習/ディープラーニングをやってみよう
+1. [Visual Studio](https://visualstudio.microsoft.com) で話題の [Keras](https://keras.io) と [TensorFlow](https://www.tensorflow.org) を使って Python で機械学習/ディープラーニングをやってみよう
 2. Azure Machine Learning を使ってクラウド上で機械学習してみよう
 3. ML.NET を使って学習済みのモデルを使ったアプリケーションを作ってみよう
 
@@ -39,12 +39,12 @@ neural network sample in C# for Microsoft de:code 2018 AI sessions ([Microsoft A
 #### 1. [mnist.python](/mnist.python)
 
 Python による手書き文字のディープラーニングのサンプル プログラムです。
-[Visual Studio](https://visualstudio.microsoft.com) からコンソールで実行できます。
+Visual Studio からコンソールで実行できます。
 また、後述する [Azure Machine Learning Studio (Preview)](https://ml.azure.com) を使って Azure 上の [Jupyter notebook](https://jupyter.org) で実行することもできます。
 
 学習済みのモデルを [ONNX (Open Neural Network Exchange)](https://onnx.ai) 形式などでファイル出力します。
 
-ライブラリとして、[TensorFlow](https://www.tensorflow.org) や [Keras](https://keras.io)、[keras2onnx](https://pypi.org/project/keras2onnx/) を利用しています。
+ライブラリとして、TensorFlow や Keras、[keras2onnx](https://pypi.org/project/keras2onnx/) を利用しています。
 
 学習用のデータとしては、MNIST (*) を利用しています。
 
