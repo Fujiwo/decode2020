@@ -1,4 +1,5 @@
 # 【de:code 2020】 Azure Machine Learning Studio と Python と C#/.NET によるディープ ラーニングのサンプル/チュートリアル
+![Machine Learning](https://raw.githubusercontent.com/Fujiwo/decode2020/master/images/ml.png)
 
 ## ■ 概要:
 
