@@ -69,7 +69,7 @@ Visual Studio からコンソールで実行できます。
 | [assets/mnist_model.onnx](/Mnist.CSharp/assets/mnist_model.onnx) | --- | 学習済みモデル (ONNX 形式ファイル) |
 
 
-## ■ 開発:
+## ■ チュートリアル:
 
 それでは、プログラムを作っていきましょう。
 開発環境は、Visual Studio と Azure Machine Learning Studio です。
