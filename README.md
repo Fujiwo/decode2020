@@ -3,7 +3,7 @@
 
 ## ■ 概要:
 
-Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) で提供されるサンプル コードです。
+Microsoft [de:code 2020](https://www.microsoft.com/ja-jp/events/decode/2020/) で提供されるサンプル コードとチュートリアルです。
 
 ローカル コンピューターまたは [Microsoft Azure](https://azure.microsoft.com) 上で [Python](https://www.python.org) による[機械学習](https://ja.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92)/[ディープ ラーニング](https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0)のモデルを作成し、[.NET](https://docs.microsoft.com/ja-jp/dotnet/) の [ML.NET](https://docs.microsoft.com/ja-jp/dotnet/machine-learning/) で [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/) から利用してみましょう。
 
